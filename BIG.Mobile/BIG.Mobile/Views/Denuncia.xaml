@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BIG.Mobile.Views.Denuncia"
+             Title="Denuncia">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Spacing="0" Padding="20">
+                <Label Text="Seleccione una persona de la lista">
+                    
+                </Label>
+           
+                
+            </StackLayout>
+            <StackLayout  Grid.Row="1" Padding="5">
+                <Picker x:Name="modepicker" Title="Personal" 
+                        >
+                    <Picker.Items>
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                    </Picker.Items>
+                   
+                    
+                </Picker>
+            </StackLayout>
+            <StackLayout  Grid.Row="2" Padding="20" VerticalOptions="Center" Orientation="Vertical" HorizontalOptions="Center">
+                <Label Text="A continuación especifique los hechos que originaron la denuncia">
+                    
+                </Label>
+                <Editor Text="" HeightRequest="150" BackgroundColor="#E8E8E8">
+
+                </Editor>
+            </StackLayout>
+            <StackLayout  Grid.Row="3" HorizontalOptions="Center" Orientation="Horizontal"  >
+                <Switch x:Name="switcher"
+                        IsToggled="False"
+                        ></Switch>
+                <Label Text="Desea que lo podamos contactar?">
+                    
+                </Label>
+                <Entry Placeholder="user@correo.com" IsVisible="True"></Entry>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Spacing="10" Padding="20" >
+                <Button Text="Enviar" WidthRequest="5" MinimumWidthRequest="20" HeightRequest="50" >
+                    
+                </Button>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+    
+</ContentPage>

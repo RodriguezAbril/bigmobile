@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BIG.Mobile.Views.Master"
+             Title="Master"
+             BackgroundColor="AliceBlue"
+             Icon="menu.png">
+    <StackLayout>
+        <Button x:Name="buttonA" Text="EXIST. LRG" TextColor="#2C82C9"></Button>
+        <Button x:Name="buttonB" Text="EXIST. CLT" TextColor="#2C82C9"></Button>
+        <Button x:Name="buttonC" Text="EXIST. Promotires" TextColor="#2C82C9"></Button>
+        <Button x:Name="buttonD" Text="Local Storage" TextColor="#2C82C9"></Button>
+    </StackLayout>
+</ContentPage>
